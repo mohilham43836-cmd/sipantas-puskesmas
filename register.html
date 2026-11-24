@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi - SIPANTAS</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+    <div class="register-container">
+
+        <div class="register-header">
+            <img src="gambar/logo-puskesmas.png" alt="Logo Puskesmas">
+            <h2>Registrasi SIPANTAS</h2>
+            <p>Buat akun untuk menggunakan layanan antrean</p>
+        </div>
+
+        <form action="api/proses-register.php" method="POST">
+
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" required>
+
+            <label>NIK</label>
+            <input
+                type="text"
+                name="nik"
+                inputmode="numeric"
+                maxlength="16"
+                minlength="16"
+                pattern="[0-9]{16}"
+                required
+            >
+
+            <label>Nomor Telepon</label>
+            <input type="tel" name="telepon" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Username</label>
+            <input type="text" name="username" required>
+
+            <label>Password</label>
+            <input type="password" name="password" minlength="8" required>
+
+            <label>Konfirmasi Password</label>
+            <input type="password" name="konfirmasi_password" minlength="8" required>
+
+            <button type="submit">Daftar Akun</button>
+
+        </form>
+
+        <p class="login-link">
+            Sudah memiliki akun?
+            <a href="login.html">Login</a>
+        </p>
+
+        <a href="index.html" class="back-link">Kembali ke Beranda</a>
+
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>

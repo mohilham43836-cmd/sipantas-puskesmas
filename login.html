@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SIPANTAS</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="login-logo">
+            <img src="gambar/logo-puskesmas.png" alt="Logo Puskesmas">
+            <h2>SIPANTAS</h2>
+            <p>Puskesmas Sei Taiwan</p>
+        </div>
+
+        <div class="login-form">
+
+            <h1>Selamat Datang</h1>
+            <p>Silakan masuk ke akun SIPANTAS Anda.</p>
+
+            <form action="api/login.php" method="POST">
+
+                <label for="username">Username atau Email</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Masukkan username atau email"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Masukkan password"
+                        required
+                    >
+                    <button type="button" id="togglePassword">
+                        Lihat
+                    </button>
+                </div>
+
+                <!-- TAMBAHAN: Tautan Lupa Password -->
+                <div style="text-align: right; margin: 8px 0 16px 0;">
+                    <a href="lupa-password.php" style="font-size: 13px; color: #008037; text-decoration: none; font-weight: 500;">
+                        Lupa Password?
+                    </a>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    Masuk
+                </button>
+
+            </form>
+
+            <p class="register-link">
+                Belum memiliki akun?
+                <a href="register.html">Daftar sekarang</a>
+            </p>
+
+            <a href="index.html" class="back-link">
+                Kembali ke Beranda
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>

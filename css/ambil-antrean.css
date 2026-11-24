@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #008037;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-brand img {
+    width: 45px;
+    height: auto;
+}
+
+.navbar-brand h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.navbar-brand p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.btn-kembali {
+    background-color: #00662d;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-kembali:hover {
+    background-color: #004d22;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Header Klaster */
+.klaster-banner {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    border-left: 5px solid #008037;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.klaster-banner h1 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.klaster-banner p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Tombol Ambil Antrean */
+.btn-konfirmasi {
+    background-color: #008037;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 3px 8px rgba(0, 128, 55, 0.25);
+    transition: 0.2s;
+}
+
+.btn-konfirmasi:hover {
+    background-color: #00662d;
+    transform: translateY(-1px);
+}
+
+/* Card Section */
+.section-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title i {
+    color: #008037;
+}
+
+.section-subtitle {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Bagan Struktur Organisasi Klaster */
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 10px 0;
+}
+
+.org-pj {
+    background: linear-gradient(135deg, #008037, #00662d);
+    color: white;
+    padding: 16px 28px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 128, 55, 0.22);
+    min-width: 280px;
+}
+
+.org-pj span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.org-pj h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.org-line-vertical {
+    width: 2px;
+    height: 28px;
+    background-color: #008037;
+}
+
+.org-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    border-top: 2px solid #008037;
+    padding-top: 22px;
+    width: 100%;
+}
+
+.member-card {
+    background: #f9fbfa;
+    border: 1px solid #d0e2d8;
+    border-left: 4px solid #008037;
+    border-radius: 8px;
+    padding: 14px 16px;
+    flex: 1 1 220px;
+    max-width: 270px;
+    transition: 0.2s;
+}
+
+.member-card:hover {
+    background: #f0f8f4;
+    border-color: #008037;
+}
+
+.member-card small {
+    display: block;
+    font-size: 11px;
+    color: #008037;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.member-card strong {
+    font-size: 14px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.member-card strong i {
+    color: #008037;
+}
+
+/* Tabel Jadwal Pelayanan */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 13px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.schedule-table th {
+    background-color: #e6f4ed;
+    color: #008037;
+    font-weight: 600;
+}
+
+.schedule-table tr:hover {
+    background-color: #fafafa;
+}
+
+.badge-jam {
+    background: #e6f4ed;
+    color: #008037;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.action-footer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    color: #777;
+    font-size: 13px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    .btn-konfirmasi {
+        width: 100%;
+        justify-content: center;
+    }
+}
